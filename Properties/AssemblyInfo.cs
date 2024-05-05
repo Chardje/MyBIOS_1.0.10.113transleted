@@ -14,5 +14,5 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 [assembly: AssemblyTitle("MyBIOS")]
 [assembly: Guid("41770fd0-987d-49be-9557-0ef0781a702c")]
-[assembly: AssemblyFileVersion("1.0.10.113")]
-[assembly: AssemblyVersion("1.0.10.113")]
+[assembly: AssemblyFileVersion("4.3.0.8")]
+[assembly: AssemblyVersion("4.3.0.8")]

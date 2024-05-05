@@ -5,6 +5,7 @@
     <OutputType>WinExe</OutputType>
     <UseWindowsForms>True</UseWindowsForms>
     <TargetFramework>net20</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
   <PropertyGroup>
     <LangVersion>11.0</LangVersion>
@@ -12,6 +13,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <RootNamespace />
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />

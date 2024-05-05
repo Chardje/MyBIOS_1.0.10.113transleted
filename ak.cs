@@ -474,7 +474,7 @@ public class ak : Form
 		al.Name = "ShowQuestion";
 		al.Size = new Size(155, 30);
 		al.TabIndex = 5;
-		al.Text = "Напомнить задание";
+		al.Text = "Нагадати завдання";
 		al.TextAlign = ContentAlignment.MiddleCenter;
 		al.Visible = false;
 		al.MouseLeave += a;

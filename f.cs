@@ -92,7 +92,7 @@ public class f : Form
 		g.Name = "Email_for_link";
 		g.Size = new Size(168, 18);
 		g.TabIndex = 6;
-		g.Text = "Куди скаржитися - ";
+		g.Text = "Куди скаржитися";
 		h.AutoSize = true;
 		h.Font = new Font("Verdana", 12f, FontStyle.Regular, GraphicsUnit.Point, 204);
 		h.Location = new Point(240, 197);

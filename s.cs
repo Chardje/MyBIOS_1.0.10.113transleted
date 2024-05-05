@@ -159,7 +159,7 @@ public class s : Form
 		base.MaximizeBox = false;
 		base.Name = "Start_Form";
 		base.StartPosition = FormStartPosition.CenterScreen;
-		Text = "MyBIOS v1.0.10.113";
+		Text = "MyBIOS v4.3.0.8";
 		i.ResumeLayout(performLayout: false);
 		((ISupportInitialize)k).EndInit();
 		((ISupportInitialize)this.m_d).EndInit();
