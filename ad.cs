@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 using MyBIOS.Properties;
@@ -306,7 +307,8 @@ public class ad : Form
 
 	private void a(object A_0, KeyEventArgs A_1)
 	{
-		if (A_1.KeyCode == Keys.Up && v > 0)
+        Debug.WriteLine(A_1.KeyCode);
+        if (A_1.KeyCode == Keys.Up && v > 0)
 		{
 			v--;
 			b();

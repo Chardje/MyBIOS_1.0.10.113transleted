@@ -1,4 +1,6 @@
+using System;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 using MyBIOS.Properties;
@@ -218,6 +220,7 @@ public class w : Form
 
 	private void a(object A_0, KeyEventArgs A_1)
 	{
+		Debug.WriteLine(A_1.KeyCode);
 		if (A_1.KeyCode == Keys.Escape)
 		{
 			e = false;
@@ -233,11 +236,11 @@ public class w : Form
 			this.m_d++;
 			c();
 		}
-		else if (A_1.KeyCode == Keys.Add)
+		else if (A_1.KeyCode == Keys.Add|| A_1.KeyCode == Keys.Oemplus)
 		{
 			a(A_0: true);
 		}
-		else if (A_1.KeyCode == Keys.Subtract)
+		else if (A_1.KeyCode == Keys.Subtract|| A_1.KeyCode == Keys.OemMinus)
 		{
 			a(A_0: false);
 		}

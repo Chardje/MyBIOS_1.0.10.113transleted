@@ -1,5 +1,6 @@
 using System;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 using MyBIOS.Properties;
@@ -462,7 +463,9 @@ public class x : Form
 
 	private void a(object A_0, KeyEventArgs A_1)
 	{
-		if (A_1.KeyCode == Keys.Up && ae > 0)
+        Debug.WriteLine(A_1.KeyCode);
+
+        if (A_1.KeyCode == Keys.Up && ae > 0)
 		{
 			ae--;
 			if (aa.jg == "S1 (POS) only" && ae == 1)
@@ -494,11 +497,11 @@ public class x : Form
 			ae = 0;
 			b();
 		}
-		else if (A_1.KeyCode == Keys.Add)
+		else if (A_1.KeyCode == Keys.Add|| A_1.KeyCode == Keys.Oemplus)
 		{
 			a(A_0: true);
 		}
-		else if (A_1.KeyCode == Keys.Subtract)
+		else if (A_1.KeyCode == Keys.Subtract|| A_1.KeyCode == Keys.OemMinus)
 		{
 			a(A_0: false);
 		}

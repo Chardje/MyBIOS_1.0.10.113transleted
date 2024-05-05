@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -78,6 +79,7 @@ public class a : Form
 
 	private void am(object A_0, KeyEventArgs A_1)
 	{
+		Debug.WriteLine(A_1.KeyCode);
 		if (A_1.KeyCode == Keys.Escape)
 		{
 			this.m_a.m = "Cancel";
