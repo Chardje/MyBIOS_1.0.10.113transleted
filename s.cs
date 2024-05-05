@@ -97,7 +97,7 @@ public class s : Form
 		this.m_g.Name = "TestMode_label";
 		this.m_g.Size = new Size(363, 23);
 		this.m_g.TabIndex = 16;
-		this.m_g.Text = "Запустити емулятор с 10 заданиями";
+		this.m_g.Text = "Запустити емулятор з 10 завданнями";
 		h.AutoSize = true;
 		h.Cursor = Cursors.Hand;
 		h.ForeColor = Color.White;

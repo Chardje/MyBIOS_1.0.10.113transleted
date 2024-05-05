@@ -131,33 +131,33 @@ public class l : Form
 			{
 				x.Items[num].ImageIndex = 0;
 				x.Items[num].ForeColor = Color.Green;
-				x.Items[num].SubItems.Add("Выполнено");
+				x.Items[num].SubItems.Add("Виконано");
 				this.m_b++;
 			}
 			else
 			{
 				x.Items[num].ImageIndex = 1;
 				x.Items[num].ForeColor = Color.Red;
-				x.Items[num].SubItems.Add("Не выполнено");
+				x.Items[num].SubItems.Add("Не виконано");
 			}
 		}
 		string text = "";
 		switch (this.m_b)
 		{
 		case 0:
-			text = "баллов";
+			text = "балів";
 			break;
 		case 1:
-			text = "балл";
+			text = "бал";
 			break;
 		case 2:
-			text = "балла";
+			text = "бала";
 			break;
 		case 3:
-			text = "балла";
+			text = "бала";
 			break;
 		case 4:
-			text = "балла";
+			text = "бала";
 			break;
 		case 5:
 		case 6:
@@ -165,7 +165,7 @@ public class l : Form
 		case 8:
 		case 9:
 		case 10:
-			text = "баллов";
+			text = "балів";
 			break;
 		}
 		ab.Text = "Ваш результат: " + this.m_b.ToString(CultureInfo.InvariantCulture) + " " + text;
@@ -206,7 +206,7 @@ public class l : Form
 	private void b()
 	{
 		int num = 0;
-		string text = "Ноль баллов";
+		string text = "Нуль балів";
 		int[] array = this.m_a.o;
 		foreach (int num3 in array)
 		{
@@ -229,42 +229,41 @@ public class l : Form
 		switch (num)
 		{
 		case 0:
-			text = "Ноль баллов";
+			text = "Нуль балів";
 			break;
 		case -1:
-			text = "Один балл";
+			text = "Один бал";
 			break;
 		case -2:
-			text = "Два балла";
+			text = "Два бала";
 			break;
 		case -3:
-			text = "Три балла";
+			text = "Три бала";
 			break;
 		case -4:
-			text = "Четыре балла";
+			text = "Чотири бала";
 			break;
 		case -5:
-			text = "Пять баллов";
+			text = "П'ять балів";
 			break;
 		case -6:
-			text = "Шесть баллов";
+			text = "Шість балів";
 			break;
 		case -7:
-			text = "Семь баллов";
+			text = "Сім балів";
 			break;
 		case -8:
-			text = "Восемь баллов";
+			text = "Вісім балів";
 			break;
 		case -9:
-			text = "Девять баллов";
+			text = "Дев'ять балів";
 			break;
 		case -10:
-			text = "Десять баллов";
+			text = "Десять балів";
 			break;
 		}
-		m.DrawString(text, q, t, 294f, 364f, u);
-		m.DrawString(text, q, s, 292f, 362f, u);
-		m.DrawString(text, q, r, 290f, 360f, u);
+		m.DrawString(text, q, Brushes.Yellow, 294f, 364f, u);
+		m.DrawString(text, q, Brushes.Blue, 292f, 362f, u);
 	}
 
 	private void d(object A_0, EventArgs A_1)
@@ -277,7 +276,7 @@ public class l : Form
 			new Point(i, j += 4),
 			new Point(k, m_l += 10)
 		};
-		m.DrawCurve(n, points, 0.5f);
+		m.DrawCurve(Pens.Yellow, points, 0.5f);
 		Point[] points2 = new Point[5]
 		{
 			new Point(this.m_c + 50, this.m_d),
@@ -286,16 +285,7 @@ public class l : Form
 			new Point(i + 50, j += 4),
 			new Point(k + 50, m_l += 10)
 		};
-		m.DrawCurve(o, points2, 0.5f);
-		Point[] points3 = new Point[5]
-		{
-			new Point(this.m_c + 100, this.m_d),
-			new Point(this.m_e + 100, f++),
-			new Point(g + 100, h += 2),
-			new Point(i + 100, j += 4),
-			new Point(k + 100, m_l += 10)
-		};
-		m.DrawCurve(p, points3, 0.5f);
+		m.DrawCurve(Pens.Blue, points2, 0.5f);		
 	}
 
 	private void c(object A_0, EventArgs A_1)
@@ -364,7 +354,7 @@ public class l : Form
 		w.Name = "VerhLabel";
 		w.Size = new Size(371, 25);
 		w.TabIndex = 0;
-		w.Text = "Результат выполненных заданий";
+		w.Text = "Результат виконаних завдань";
 		x.Columns.AddRange(new ColumnHeader[3] { y, z, aa });
 		x.Font = new Font("Verdana", 11.25f, FontStyle.Regular, GraphicsUnit.Point, 204);
 		x.ForeColor = Color.Black;
@@ -378,9 +368,9 @@ public class l : Form
 		x.TabIndex = 0;
 		x.UseCompatibleStateImageBehavior = false;
 		x.View = View.Details;
-		y.Text = "     Раздел";
+		y.Text = "     Розділ";
 		y.Width = 110;
-		z.Text = "Задание";
+		z.Text = "Завдання";
 		z.Width = 515;
 		aa.Text = "Результат";
 		aa.Width = 135;
@@ -425,7 +415,7 @@ public class l : Form
 		base.MaximizeBox = false;
 		base.Name = "Result_Form";
 		base.StartPosition = FormStartPosition.CenterScreen;
-		Text = "MyBIOS v1.0.10.113";
+		Text = "MyBIOS v4.3.0.8";
 		base.FormClosing += a;
 		base.LocationChanged += b;
 		ResumeLayout(performLayout: false);
