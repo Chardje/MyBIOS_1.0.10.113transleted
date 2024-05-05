@@ -183,7 +183,7 @@ public class z : Form
 		q.Name = "ShowQuestion";
 		q.Size = new Size(155, 30);
 		q.TabIndex = 6;
-		q.Text = "Напомнить задание";
+		q.Text = "Нагадати завдання";
 		q.TextAlign = ContentAlignment.MiddleCenter;
 		q.Visible = false;
 		q.MouseLeave += a;

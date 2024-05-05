@@ -89,7 +89,7 @@ public class s : Form
 		this.m_f.Name = "StartDemo_label";
 		this.m_f.Size = new Size(204, 23);
 		this.m_f.TabIndex = 15;
-		this.m_f.Text = "Запустить эмулятор";
+		this.m_f.Text = "Запустити емулятор";
 		this.m_g.AutoSize = true;
 		this.m_g.Font = new Font("Verdana", 14.25f, FontStyle.Regular, GraphicsUnit.Point, 204);
 		this.m_g.ForeColor = Color.White;
@@ -97,15 +97,15 @@ public class s : Form
 		this.m_g.Name = "TestMode_label";
 		this.m_g.Size = new Size(363, 23);
 		this.m_g.TabIndex = 16;
-		this.m_g.Text = "Запустить эмулятор с 10 заданиями";
+		this.m_g.Text = "Запустити емулятор с 10 заданиями";
 		h.AutoSize = true;
 		h.Cursor = Cursors.Hand;
 		h.ForeColor = Color.White;
-		h.Location = new Point(611, 9);
+		h.Location = new Point(600, 9);
 		h.Name = "About";
 		h.Size = new Size(117, 18);
 		h.TabIndex = 17;
-		h.Text = "О программе";
+		h.Text = "Про программу";
 		h.Click += a;
 		i.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
 		i.BackColor = Color.DimGray;

@@ -51,7 +51,7 @@ public class f : Form
 		this.m_b.Name = "Ver";
 		this.m_b.Size = new Size(162, 18);
 		this.m_b.TabIndex = 1;
-		this.m_b.Text = "Версия 1.0.10.113";
+		this.m_b.Text = "Версія 4.3.0.8";
 		c.AutoSize = true;
 		c.Font = new Font("Verdana", 12f, FontStyle.Regular, GraphicsUnit.Point, 204);
 		c.ForeColor = Color.White;
@@ -59,7 +59,7 @@ public class f : Form
 		c.Name = "Copyright";
 		c.Size = new Size(422, 18);
 		c.TabIndex = 2;
-		c.Text = "Авторские права © 2009–2011 Алексей Майоров";
+		c.Text = "Авторскі права © 2023–2024 Петра Порошенка";
 		d.AutoSize = true;
 		d.Font = new Font("Verdana", 12f, FontStyle.Regular, GraphicsUnit.Point, 204);
 		d.ForeColor = Color.White;
@@ -67,7 +67,7 @@ public class f : Form
 		d.Name = "Site_for_link";
 		d.Size = new Size(176, 18);
 		d.TabIndex = 3;
-		d.Text = "Домашняя страница";
+		d.Text = "Домашня сторінка";
 		e.AutoSize = true;
 		e.Font = new Font("Verdana", 12f, FontStyle.Regular, GraphicsUnit.Point, 204);
 		e.Location = new Point(240, 167);
@@ -75,7 +75,7 @@ public class f : Form
 		e.Size = new Size(152, 18);
 		e.TabIndex = 1;
 		e.TabStop = true;
-		e.Text = "bios-sim.narod.ru";
+		e.Text = "president.gov.ua";
 		e.LinkClicked += b;
 		m_f.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
 		m_f.Location = new Point(258, 247);
@@ -92,7 +92,7 @@ public class f : Form
 		g.Name = "Email_for_link";
 		g.Size = new Size(168, 18);
 		g.TabIndex = 6;
-		g.Text = "Электронная почта";
+		g.Text = "Куди скаржитися - ";
 		h.AutoSize = true;
 		h.Font = new Font("Verdana", 12f, FontStyle.Regular, GraphicsUnit.Point, 204);
 		h.Location = new Point(240, 197);
@@ -100,7 +100,7 @@ public class f : Form
 		h.Size = new Size(162, 18);
 		h.TabIndex = 2;
 		h.TabStop = true;
-		h.Text = "bios-sim@narod.ru";
+		h.Text = "Богові скаржіться";
 		h.LinkClicked += a;
 		i.AutoSize = true;
 		i.Font = new Font("Verdana", 12f, FontStyle.Regular, GraphicsUnit.Point, 204);
@@ -109,7 +109,7 @@ public class f : Form
 		i.Name = "AdditionalName";
 		i.Size = new Size(584, 18);
 		i.TabIndex = 21;
-		i.Text = "MyBIOS — эмулятор BIOS Setup Utility материнской платы ASUS P5K";
+		i.Text = "MyBIOS — емулятор BIOS Setup Utility материнської плати ASUS P5K";
 		base.AutoScaleDimensions = new SizeF(9f, 18f);
 		base.AutoScaleMode = AutoScaleMode.Font;
 		BackColor = Color.DimGray;
@@ -129,7 +129,7 @@ public class f : Form
 		base.MinimizeBox = false;
 		base.Name = "About_Form";
 		base.StartPosition = FormStartPosition.CenterScreen;
-		Text = "О программе";
+		Text = "Про програму";
 		ResumeLayout(performLayout: false);
 		PerformLayout();
 	}
@@ -146,11 +146,11 @@ public class f : Form
 
 	private void b(object A_0, LinkLabelLinkClickedEventArgs A_1)
 	{
-		Process.Start("www.bios-sim.narod.ru");
+		Process.Start("https://www.president.gov.ua/");
 	}
 
 	private void a(object A_0, LinkLabelLinkClickedEventArgs A_1)
 	{
-		Process.Start("mailto:bios-sim@narod.ru");
+		Process.Start("https://www.cerkva.info/");
 	}
 }

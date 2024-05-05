@@ -122,7 +122,7 @@ public class h : Form
 	private void a(object A_0, ListViewItemSelectionChangedEventArgs A_1)
 	{
 		int itemIndex = A_1.ItemIndex;
-		o.Text = "Задание из раздела " + this.m_f.Items[itemIndex].Text + ":";
+		o.Text = "Завдання з розділу " + this.m_f.Items[itemIndex].Text + ":";
 		n.Text = this.m_f.Items[itemIndex].SubItems[1].Text;
 	}
 
@@ -166,9 +166,9 @@ public class h : Form
 		this.m_f.UseCompatibleStateImageBehavior = false;
 		this.m_f.View = View.Details;
 		this.m_f.ItemSelectionChanged += a;
-		g.Text = "Раздел";
+		g.Text = "Розділ";
 		g.Width = 90;
-		m_h.Text = "Задание";
+		m_h.Text = "Завдання";
 		m_h.Width = 1600;
 		i.Font = new Font("Verdana", 11.25f, FontStyle.Regular, GraphicsUnit.Point, 204);
 		i.ForeColor = Color.Black;
@@ -211,7 +211,7 @@ public class h : Form
 		m.Name = "Shapka";
 		m.Size = new Size(680, 36);
 		m.TabIndex = 26;
-		m.Text = "Вам необходимо сконфигурировать BIOS Setup Utility в соответствии со всеми \r\nпоставленными заданиями:";
+		m.Text = "Вам необхідно конфігурувати BIOS Setup Utility відповідно до всіх \r\nпоставлених задач:";
 		n.BackColor = Color.DimGray;
 		n.Font = new Font("Verdana", 12f, FontStyle.Regular, GraphicsUnit.Point, 204);
 		n.ForeColor = Color.White;
@@ -243,7 +243,7 @@ public class h : Form
 		base.MaximizeBox = false;
 		base.Name = "StartTest_Form";
 		base.StartPosition = FormStartPosition.CenterScreen;
-		Text = "MyBIOS | Список заданий";
+		Text = "MyBIOS | Список завдань";
 		base.FormClosing += a;
 		((ISupportInitialize)k).EndInit();
 		((ISupportInitialize)l).EndInit();
