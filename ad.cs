@@ -205,7 +205,7 @@ public class ad : Form
 		s.Name = "ShowQuestion";
 		s.Size = new Size(155, 30);
 		s.TabIndex = 6;
-		s.Text = "Напомнить задание";
+		s.Text = "Нагадати завдання";
 		s.TextAlign = ContentAlignment.MiddleCenter;
 		s.Visible = false;
 		s.MouseLeave += a;
