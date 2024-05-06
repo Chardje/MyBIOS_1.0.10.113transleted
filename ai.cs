@@ -1874,11 +1874,11 @@ public class ai : Form
 			a();
 			d();
 		}
-		else if (A_1.KeyCode == Keys.Add)
+		else if (A_1.KeyCode == Keys.Add || A_1.KeyCode == Keys.Oemplus)
 		{
 			a(A_0: true);
 		}
-		else if (A_1.KeyCode == Keys.Subtract)
+		else if (A_1.KeyCode == Keys.Subtract || A_1.KeyCode == Keys.OemMinus)
 		{
 			a(A_0: false);
 		}
